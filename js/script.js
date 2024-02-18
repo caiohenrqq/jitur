@@ -1,0 +1,1 @@
+bgImg = document.getElementById('bgImg');

@@ -1,45 +1,54 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jitur - Turismo</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Font Inter Setup-->
-    <link rel="preconnect" href="https://rsms.me/" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-  </head>
-
-  <body
-    class="font-[Inter] bg-gradient-to-t from-[#eec6ca] to-[#ffb7c3] h-screen"
-  >
-    <header class="bg-white">
-      <nav class="flex justify-between items-center w-[92%] mx-auto">
-        <div>
-          <img class="w-16 cursor-pointer" src="/img/logo.png" alt="..." />
-        </div>
-        <div
-          class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
-        >
-          <ul
-            class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8"
-          >
-            <li>
-              <a class="hover:text-gray-500" href="#">Pacotes</a>
-            </li>
-            <li>
-              <a class="hover:text-gray-500" href="#">Avaliações</a>
-            </li>
-            <li>
-              <a class="hover:text-gray-500" href="#">Localização</a>
-            </li>
-            <li>
-              <a class="hover:text-gray-500" href="#">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-  </body>
+    <title>Jitur</title>
+     <!-- Font Setup -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Montserrat] bg-black">
+    <section id="bgImg" class="bg-cover h-screen bg-center relative bg-opacity-100" style="background-image: url(/img/bg/bgimg75opcty.jpg);">
+        <header class="text-white">
+            <nav class="flex justify-between items-center w-[92%] mx-auto">
+                <div class="cursor-pointer">
+                    <img src="/img/logo.png" class="w-16" alt="...">
+                </div>
+                <div
+                    class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                        <li>
+                            <a class="hover:text-gray-500 font-medium" href="#">Início</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500 font-medium" href="#">Sobre</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500 font-medium" href="#">Pacotes</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500 font-medium" href="#">Localização</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500 font-medium" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="#">
+                        <img src="/img/icons/whatsappicon.svg" alt="#">
+                    </a>
+                    <a href="#">
+                        <img src="/img/icons/instagramicon.svg" alt="#">
+                    </a>
+                    <a href="#">
+                        <img src="/img/icons/facebookicon.svg" alt="#">
+                    </a>
+                </div>
+        </header>
+    </section>
+</body>
+<script src="/js/script.js"></script>
 </html>

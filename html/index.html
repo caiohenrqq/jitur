@@ -5,7 +5,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Jitur</title>
      <!-- Font Setup -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
@@ -13,8 +13,8 @@
     <section id="bgImg" class="bg-cover h-screen bg-center relative bg-opacity-100" style="background-image: url(/img/bg/bgimg75opcty.jpg);">
         <header class="text-white">
             <nav class="flex justify-between items-center w-[92%] mx-auto">
-                <div class="cursor-pointer">
-                    <img src="/img/logo.png" class="w-16" alt="...">
+                <div class="">
+                    <img src="/img/logo.png" class="w-16 cursor-pointer" alt="...">
                 </div>
                 <div
                     class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
@@ -37,18 +37,81 @@
                     </ul>
                 </div>
                 <div class="flex items-center gap-6">
-                    <a href="#">
-                        <img src="/img/icons/whatsappicon.svg" alt="#">
-                    </a>
-                    <a href="#">
-                        <img src="/img/icons/instagramicon.svg" alt="#">
-                    </a>
-                    <a href="#">
-                        <img src="/img/icons/facebookicon.svg" alt="#">
-                    </a>
+                        <a class="hover:bg-gray-500" href="#">
+                            <img src="/img/icons/whatsappicon.svg" alt="#">
+                        </a>
+                        <a class="hover:bg-gray-500" href="#">
+                            <img src="/img/icons/instagramicon.svg" alt="#">
+                        </a>
+                        <a class="hover:bg-gray-500" href="#">
+                            <img src="/img/icons/facebookicon.svg" alt="#">
+                        </a>
                 </div>
         </header>
+
+        <section id="hero" class="pt-[271] flex justify-center items-center">
+            <div class="flex flex-col text-center">
+                <p class="uppercase font-bold text-7xl leading-[88px] tracking-[0.1em] text-white">viva o presente</p>
+                <p class="lowercase leading-[88px] tracking-[0.05em] font-thin text-[72px] text-white ">sonhe com o futuro</p>
+                <p class="lowercase leading-[88px] tracking-[0.05em] font-bold text-white text-[72px]">viaje com a <span class="font-black">gente.</span></p>
+                <p class="font-normal text-[24px] text-white leading-[29px] h-10 pt-[30px]">Deixe as dificuldades do caminho para trás e desfrute de uma viagem sem preocupações. Com nossos serviços completos, desde a reserva do hotel até a compra das passagens, cuidamos de cada detalhe para que você possa aproveitar ao máximo sua jornada.</p>
+                <div class="items-center pt-[90px]">
+                    <button class="bg-[#9ccf12] rounded-[40px] font-bold w-[180px] h-[57px]" style="box-shadow: 0px 0px 25px rgba(156, 207, 18, 0.75);">Fale Conosco
+                    </button>
+                </div>
+            </div>
+        </section>
     </section>
+<!-- 
+    <section class="bg-white h-screen grid grid-cols-2 " id="sobre">
+        <div class="md:py-[80]">
+            <h1 class="pt-[350px] text-[72px] uppercase text-black font-bold leading-[88px]">Sobre</h1>
+            <p class="leading-[22px] tracking-[-0.01em] text-[18px]">Bem-vindo à Jitur, onde suas viagens se tornam realidade. 
+                Deixe-nos cuidar de tudo para que você possa relaxar e aproveitar ao máximo cada destino.</p>
+        </div>
+            <div>
+                <img class="h-screen" src="/img/bg/bgimgsobre.jpg" alt="">
+            </div>
+    </section> -->
+    <section class="bg-white h-screen">
+        <div class="container mx-auto flex">
+            <div class="w-1/2 flex flex-col justify-center text-left">
+                <h1 class="text-6xl uppercase text-black font-bold leading-[88px]">Sobre</h1>
+                <p class="leading-[22px] tracking-[-0.01em] text-[18px]">
+                    Bem-vindo à Jitur, onde suas viagens se tornam realidade. 
+                    Deixe-nos cuidar de tudo para que você possa relaxar e aproveitar ao máximo cada destino.
+                </p>
+                <div class="flex items-center mt-4">
+                    <img class="mr-2" src="/img/icons/aviaoicon.svg" alt="">
+                    <div>
+                        <h1 class="font-semibold text-[42px] leading-[52px] tracking-[-0.01em] mb-[-5px]">30+</h1>
+                        <p class="">anos no mercado</p>
+                    </div>
+                </div>
+                <div class="flex items-center mt-4">
+                    <img class="mr-2" src="/img/icons/pessoasicon.svg" alt="">
+                    <div>
+                        <h1 class="font-semibold text-[42px] leading-[52px] tracking-[-0.01em] mb-[-5px]">10.000+</h1>
+                        <p class="">clientes satisfeitos</p>
+                    </div>
+                </div>
+                <div class="flex items-center mt-4">
+                    <img class="mr-2" src="/img/icons/maosicon.svg" alt="">
+                    <div>
+                        <h1 class="font-semibold text-[42px] leading-[52px] tracking-[-0.01em] mb-[-5px]">50+</h1>
+                        <p class="">parcerias realizadas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <img class="h-screen " src="/img/bg/bgimgsobre.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    
+    
+   
 </body>
 <script src="/js/script.js"></script>
 </html>

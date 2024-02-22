@@ -8,7 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <style>
+        @font-face{
+           font-family: NothingYouCouldDo; 
+           src: url(/font/NothingYouCouldDo-Regular.ttf)
+        }
+
+        #rj_img, #maceio_img, #fortaleza_img {
+            opacity: 0.5;
+            transition: opacity 0.5s ease;
+        }
+
+        #rj_img:hover, #maceio_img:hover, #fortaleza_img:hover {
+            opacity: 1;
+        }
+        </style>
 </head>
+
 <body class="font-[Montserrat] bg-black">
     <section id="bgImg" class="bg-cover h-screen bg-center relative bg-opacity-100" style="background-image: url(/img/bg/bgimg75opcty.jpg);">
         <header class="text-white">
@@ -63,17 +83,6 @@
             </div>
         </section>
     </section>
-<!-- 
-    <section class="bg-white h-screen grid grid-cols-2 " id="sobre">
-        <div class="md:py-[80]">
-            <h1 class="pt-[350px] text-[72px] uppercase text-black font-bold leading-[88px]">Sobre</h1>
-            <p class="leading-[22px] tracking-[-0.01em] text-[18px]">Bem-vindo à Jitur, onde suas viagens se tornam realidade. 
-                Deixe-nos cuidar de tudo para que você possa relaxar e aproveitar ao máximo cada destino.</p>
-        </div>
-            <div>
-                <img class="h-screen" src="/img/bg/bgimgsobre.jpg" alt="">
-            </div>
-    </section> -->
     <section class="bg-white h-screen">
         <div class="container mx-auto flex">
             <div class="w-1/2 flex flex-col justify-center text-left">
@@ -110,10 +119,23 @@
         </div>
     </section>
     
-    
-    
-    
-   
+    <section class="bg-white h-screen bg-cover" style="background-image: url(/img/bg/bgpacotes.svg);" id="pacotes">
+        <h2 class="font-[NothingYouCouldDo] pt-[67px] leading-[85px] text-center text-[64px] text-[#17366E]">conheça</h2>
+        <h1 class="uppercase mt-[-20px] leading-[88px] font-bold text-[72px] text-center">pacotes</h1>
+        <div class="container mx-auto flex">
+            <div class="flex flex-col-3 gap-[213px] mt-[29px]">
+                <div class="opacity-50" id="rj_img">
+                    <img class="h-full" src="/img/pacotes/rj_img.png" alt="...">
+                </div>
+                <div class="opacity-50" id="maceio_img">
+                    <img class="h-full" src="/img/pacotes/maceio_img.png" alt="...">
+                </div>
+                <div class="opacity-50" id="fortaleza_img">
+                    <img class="h-full" src="/img/pacotes/fortaleza_img.png" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="/js/script.js"></script>
 </html>
